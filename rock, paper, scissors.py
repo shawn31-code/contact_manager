@@ -4,9 +4,10 @@ options = ["rock", "paper", "scissors"]
 wins = 0
 computer_wins = 0
 print("first to 5 wins")
+
 while True:
     computer_choice = random.choice(options)
-    player_choice = input("enter a choice of rock, paper, or scissors to play: ")
+    player_choice = input("enter rock, paper, or scissors to play: ")
     if computer_choice == player_choice:
         print("tie")
     elif computer_choice == "paper" and player_choice == "rock":
@@ -31,7 +32,8 @@ while True:
         print("you won twice!")
         wins += 2
     else:
-        print("you lose you did not input a correct choice ")
+        print("You lose, you did not input a correct choice ")
+        wins -= 1
 
     print("your score: ", wins)
     print("computer score: ", computer_wins)
