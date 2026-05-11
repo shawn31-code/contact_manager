@@ -34,7 +34,6 @@ while True:
     else:
         print("You lose, you did not input a correct choice ")
         wins -= 1
-
     print("your score: ", wins)
     print("computer score: ", computer_wins)
     if wins >= 5:
@@ -47,10 +46,8 @@ while True:
             continue
         elif restart == "n":
             break
-        else:
-            break
-    elif computer_wins >= 5:
-        print("you lost to a computer!")
+        elif computer_wins >= 5:
+            print("you lost to a computer!")
         print("final score: ")
         print("you", wins)
         print("computer_wins", computer_wins)
@@ -58,9 +55,12 @@ while True:
         if restart == "y":
             continue
         elif restart == "n":
+            print("final score: ")
+            print("you", wins)
             break
         else:
-            break
+            print("Bye!")
+
 
 
 
